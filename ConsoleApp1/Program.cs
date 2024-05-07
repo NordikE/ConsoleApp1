@@ -4,7 +4,7 @@ class Program
 
     public class IntVariable
     {
-        int IntVar = 42
+        int IntVar = 42;
     }
 
     public class StrVariable
