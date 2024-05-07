@@ -1,2 +1,44 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Csharp_Assignment_1;
+class Program
+{
+
+    public class IntVariable
+    {
+        int IntVar = 42
+    }
+
+    public class StrVariable
+    {
+        string StrVar = "String";
+    }
+    public class DoubleVariable
+    { 
+        double DoubleVar = 3.142
+    }
+
+
+
+    static void Main(string[] args)
+    {
+        int x = 5;
+        double y = 0.15;
+        // char a = 'b';
+        // string testChar = "aaa";
+        Console.WriteLine(x + y);
+        Console.WriteLine(AddNumbers(6, 6)); // -> 6
+        string[] stringArray = { "Hello", "From", "A", "Array" };
+        Console.WriteLine(VoidAdd(2, 15));
+        Console.WriteLine(SayHello());
+        Console.WriteLine(stringArray[3]);
+
+        for (int i = 0; i < stringArray.Length; i++)
+        {
+            Console.WriteLine(stringArray[i]);
+        }
+    }
+
+    public static string SayHello()
+    {
+        return "Hello";
+    }
+}
