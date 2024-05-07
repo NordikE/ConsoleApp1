@@ -15,5 +15,6 @@ class Program
     {
         double DoubleVar = 3.142;
     }
+}
 
     
