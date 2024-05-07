@@ -1,24 +1,44 @@
 ﻿namespace Csharp_Assignment_1;
-
 class Program
 {
-    Console.WriteLine("\nOppgave 1\n");
-    
-    public class IntVariable
+
+    public class Car
     {
-        int IntVar = 42;
+        string model = "Volvo";
     }
 
-    public class StrVariable
+    public static int AddNumbers(int a, int b)
     {
-        string StrVar = "String";
+        return a + b;
     }
-    public class DoubleVariable
+    public static int VoidAdd(int a, int b)
     {
-        double DoubleVar = 3.142;
+        return a + b;
     }
-    Console.Writeline("Oppgave 2");
+
+    static void Main(string[] args)
+    {
+        int x = 5;
+        double y = 0.15;
+        // char a = 'b';
+        // string testChar = "aaa";
+        Console.WriteLine(x + y);
+        Console.WriteLine(AddNumbers(6, 6)); // -> 6
+        string[] stringArray = { "Hello", "From", "A", "Array" };
+        Console.WriteLine(VoidAdd(2, 15));
+        Console.WriteLine(SayHello());
+        Console.WriteLine(stringArray[3]);
+
+        for (int i = 0; i < stringArray.Length; i++)
+        {
+            Console.WriteLine(stringArray[i]);
+        }
+    }
+
+    public static string SayHello()
+    {
+        return "Hello";
+    }
 }
 
 
-    
