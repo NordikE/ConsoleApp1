@@ -7,9 +7,9 @@ class Program
         string model = "Volvo";
     }
 
-    public static int AddNumbers(int a, int b)
+    public static int AddNumbers(int x, int y)
     {
-        return a + b;
+        return x + y;
     }
     public static int VoidAdd(int a, int b)
     {
